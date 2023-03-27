@@ -20,7 +20,7 @@ for (pos in estudantes){
 
 let maiorNota = Math.max.apply(null, notas); //guardou a maior nota
 
-//map para alterar as notas e retornar um arrau com as notas alteradas
+//map para alterar as notas e retornar um array com as notas alteradas
 let notasNormalizadas = estudantes.map(estudantes => (estudantes.nota * 10 / maiorNota).toFixed(2));
 
 console.log(notasNormalizadas);
