@@ -5,3 +5,7 @@
 //IIFE
 const nome = "Ranierí";
 (() => {console.log("Olá, mundo!")})();
+
+(function(a, b){
+    console.log(a-b);
+}) (25, 15);
