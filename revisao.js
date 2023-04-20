@@ -1,19 +1,23 @@
-// const numeros = [4, 8, 10, 12];
+//Função anônima
+(function (a, b) {
+    console.log(a + b);
+}) (5, 6);
 
-// const divideValores = numeros.map(numeros => numeros/2);
-// console.log(divideValores);
-// const soma = (...numeros) => {
-//     let s = 0
-//     for (i of numeros){
-//         s += i;
-//     }
-//     return s;
-// }
-// console.log(soma(4, 5, 8, 10, 3));
+//Função expressa
+const soma = (function(x, y){
+    return x + y;
+})
+console.log(soma(10, 9));
 
-const numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//arrow function
+const flecha = (c, d) => c*d;
+console.log(flecha(2, 4));
 
-const verificador = c => c % 2 === 1;
+const duplica = w => w*2;
+console.log(duplica(16));
 
-console.log(numeros2.filter(verificador));
+//IIFE
 
+(() => console.log("Olá mundo!"))();
+
+((l, v) => console.log(l - v))(5, 2);
