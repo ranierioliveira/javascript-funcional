@@ -1,7 +1,7 @@
 const soma = (...numeros) => {
     console.log(numeros);
     let aux = 0;
-    for (let c in numeros){
+    for (let c of numeros){
         aux += c;
         console.log(aux)
     }
