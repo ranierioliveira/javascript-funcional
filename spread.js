@@ -8,4 +8,4 @@ const soma = (...numeros) => {
     return aux;
 }
 
-console.log(soma(2, 5, 10, 2));
+console.log(soma(2, 5, 10, 2, 10));
